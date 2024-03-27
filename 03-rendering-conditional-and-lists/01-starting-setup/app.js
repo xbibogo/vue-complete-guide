@@ -2,15 +2,15 @@ const app = Vue.createApp({
 	data() {
 		return {
 			goals: [],
-			currentGoal: '',
+			currentGoal: "",
 		};
 	},
 	methods: {
 		addGoal() {
 			console.log(this.currentGoal);
-			if (this.currentGoal != '') {
+			if (this.currentGoal != "") {
 				this.goals.push(this.currentGoal);
-				this.currentGoal = '';
+				this.currentGoal = "";
 			}
 		},
 		removeGoal(idx) {
@@ -19,4 +19,4 @@ const app = Vue.createApp({
 	},
 });
 
-vm = app.mount('#user-goals');
+vm = app.mount("#user-goals");
